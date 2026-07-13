@@ -536,7 +536,7 @@ export default function Home() {
             onMouseEnter={(e) => (e.currentTarget.style.color = '#C5975B')}
             onMouseLeave={(e) => (e.currentTarget.style.color = '#033A37')}
           >
-            Gallery zawng zawng en →
+            Gallery →
           </Link>
         </div>
 
