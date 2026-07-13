@@ -128,7 +128,7 @@ export default function Home() {
                 e.currentTarget.style.color = '#F4F0E8';
               }}
             >
-              Gallery En
+              Gallery
             </Link>
           </div>
         </div>
