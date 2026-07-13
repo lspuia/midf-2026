@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Design handoff source files
+Website-redesign-MIDF.zip
+Website-redesign-MIDF/
+
+# Old netlify dump images (not used)
+public/grayscale-*.jpg
+public/midf-meet-2033-*.jpg
+public/mizoram-interior-designers-forum-*.png
+public/mizoram-interior-designers-forum-*.jpg
+public/pics/
