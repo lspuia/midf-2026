@@ -6,9 +6,9 @@ import Image from 'next/image';
 export default function Gallery() {
   const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
 
-  // Meet 2023 images (1-4) and meet 2022 images (excluding deleted: 5,9,17,18,19,27,28)
+  // Meet 2023 images (1-4) and meet 2022 images (excluding deleted photos)
   const meet2023Numbers = [1, 2, 3, 4];
-  const meet2022Numbers = [1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25, 26, 29, 30];
+  const meet2022Numbers = [1, 2, 6, 7, 8, 10, 12, 14, 22, 24, 25, 26, 29, 30];
 
   const meet2023Images = meet2023Numbers.map((n) => ({
     src: `/assets/gallery/meet-2023-${n}.jpg`,
