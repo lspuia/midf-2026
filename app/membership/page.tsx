@@ -56,7 +56,7 @@ export default function Membership() {
               lineHeight: 1.7,
             }}
           >
-            Interior Design lama zirna leh thiamna nei, MIDF-a inziahlut duh te
+            Interior Design lama zirna leh thiamna nei, MIDF-a inziahluh duh te
             tan.
           </p>
         </div>
