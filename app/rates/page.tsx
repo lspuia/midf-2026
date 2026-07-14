@@ -57,14 +57,14 @@ export default function Rates() {
           <p
             style={{
               margin: '22px 0 0',
-              maxWidth: '60ch',
+              maxWidth: '100%',
               color: '#cfe0da',
               fontSize: 'clamp(15px, 1.1vw, 18px)',
               lineHeight: 1.7,
+              whiteSpace: 'nowrap',
             }}
           >
-            A hnuaia mi ang hian MIDF member te chuan Minimum Design Fee/Rate
-            kalpui tur a ni.
+            A hnuaia mi ang hian MIDF member te chuan Minimum Design Fee/Rate kalpui tur a ni.
           </p>
         </div>
       </section>
