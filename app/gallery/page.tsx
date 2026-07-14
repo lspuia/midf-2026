@@ -6,9 +6,9 @@ import Image from 'next/image';
 export default function Gallery() {
   const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
 
-  // Generate meet-2023 images (2-4) and meet-2022 images (1-30)
-  const meet2023Images = Array.from({ length: 3 }, (_, i) => ({
-    src: `/assets/gallery/meet-2023-${i + 2}.jpg`,
+  // Generate meet-2023 images (1-4) and meet-2022 images (1-30)
+  const meet2023Images = Array.from({ length: 4 }, (_, i) => ({
+    src: `/assets/gallery/meet-2023-${i + 1}.jpg`,
     caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
   }));
 
@@ -180,6 +180,22 @@ export default function Gallery() {
                     e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
+                {/* Temporary number overlay for identification */}
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: 8,
+                    left: 8,
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    color: '#fff',
+                    padding: '4px 10px',
+                    fontSize: 16,
+                    fontWeight: 700,
+                    zIndex: 10,
+                  }}
+                >
+                  {index + 1}
+                </span>
               </button>
             ))}
           </div>
