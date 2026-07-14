@@ -5,10 +5,10 @@ import Image from 'next/image';
 
 export default function Home() {
   const galleryImages = [
-    '/assets/gallery/meet-2022-3.jpg',
-    '/assets/gallery/meet-2022-7.jpg',
-    '/assets/gallery/meet-2022-14.jpg',
-    '/assets/gallery/meet-2023-2.jpg',
+    '/assets/gallery/00001-midf-meet-2022.jpeg',
+    '/assets/gallery/00006-midf-meet-2022.jpeg',
+    '/assets/gallery/00010-midf-meet-2022.jpeg',
+    '/assets/gallery/00034-midf-meet-2022.jpg',
   ];
 
   return (
