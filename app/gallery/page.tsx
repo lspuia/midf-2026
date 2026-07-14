@@ -97,7 +97,7 @@ export default function Gallery() {
               lineHeight: 1.7,
             }}
           >
-            MIDF Designers' Meet leh insuihkhawmna hmanlai lem te.
+            MIDF Designers' Meet & events photo gallery.
           </p>
         </div>
       </section>
