@@ -183,6 +183,22 @@ export default function Gallery() {
                     e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
+                {/* Temporary number overlay for identification */}
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: 8,
+                    left: 8,
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    color: '#fff',
+                    padding: '4px 10px',
+                    fontSize: 16,
+                    fontWeight: 700,
+                    zIndex: 10,
+                  }}
+                >
+                  {index + 1}
+                </span>
               </button>
             ))}
           </div>
