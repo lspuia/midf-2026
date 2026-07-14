@@ -6,19 +6,32 @@ import Image from 'next/image';
 export default function Gallery() {
   const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
 
-  // All gallery images with new naming convention
+  // Gallery images - explicit list of remaining photos
   const inauguralImages = [
-    // 1-30: jpeg files
-    ...Array.from({ length: 30 }, (_, i) => ({
-      src: `/assets/gallery/${String(i + 1).padStart(5, '0')}-midf-meet-2022.jpeg`,
-      caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
-    })),
-    // 31-34: jpg files
-    ...Array.from({ length: 4 }, (_, i) => ({
-      src: `/assets/gallery/${String(i + 31).padStart(5, '0')}-midf-meet-2022.jpg`,
-      caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
-    })),
-  ];
+    '/assets/gallery/00001-midf-meet-2022.jpeg',
+    '/assets/gallery/00006-midf-meet-2022.jpeg',
+    '/assets/gallery/00007-midf-meet-2022.jpeg',
+    '/assets/gallery/00008-midf-meet-2022.jpeg',
+    '/assets/gallery/00009-midf-meet-2022.jpeg',
+    '/assets/gallery/00010-midf-meet-2022.jpeg',
+    '/assets/gallery/00011-midf-meet-2022.jpeg',
+    '/assets/gallery/00012-midf-meet-2022.jpeg',
+    '/assets/gallery/00013-midf-meet-2022.jpeg',
+    '/assets/gallery/00015-midf-meet-2022.jpeg',
+    '/assets/gallery/00017-midf-meet-2022.jpeg',
+    '/assets/gallery/00019-midf-meet-2022.jpeg',
+    '/assets/gallery/00025-midf-meet-2022.jpeg',
+    '/assets/gallery/00026-midf-meet-2022.jpeg',
+    '/assets/gallery/00027-midf-meet-2022.jpeg',
+    '/assets/gallery/00029-midf-meet-2022.jpeg',
+    '/assets/gallery/00030-midf-meet-2022.jpeg',
+    '/assets/gallery/00031-midf-meet-2022.jpg',
+    '/assets/gallery/00032-midf-meet-2022.jpg',
+    '/assets/gallery/00034-midf-meet-2022.jpg',
+  ].map(src => ({
+    src,
+    caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
+  }));
 
   const registrationImage = {
     src: '/assets/gallery/society-registration.jpg',
@@ -72,7 +85,7 @@ export default function Gallery() {
               letterSpacing: '-0.01em',
             }}
           >
-            Kan Insuihkhawmna
+            Events Gallery
           </h1>
 
           <p
@@ -181,22 +194,6 @@ export default function Gallery() {
                     e.currentTarget.style.transform = 'scale(1)';
                   }}
                 />
-                {/* Temporary number overlay for identification */}
-                <span
-                  style={{
-                    position: 'absolute',
-                    top: 8,
-                    left: 8,
-                    background: 'rgba(0, 0, 0, 0.8)',
-                    color: '#fff',
-                    padding: '4px 10px',
-                    fontSize: 16,
-                    fontWeight: 700,
-                    zIndex: 10,
-                  }}
-                >
-                  {index + 1}
-                </span>
               </button>
             ))}
           </div>
