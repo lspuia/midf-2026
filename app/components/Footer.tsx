@@ -184,7 +184,7 @@ export default function Footer() {
             letterSpacing: '0.04em',
           }}
         >
-          <span>© 2025 Mizoram Interior Designers Forum · MSR 1573 of 02.02.2023</span>
+          <span>© {new Date().getFullYear()} Mizoram Interior Designers Forum · MSR 1573 of 02.02.2023</span>
           <span>Aizawl, Mizoram</span>
         </div>
       </div>
