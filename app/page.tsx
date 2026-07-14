@@ -142,7 +142,7 @@ export default function Home() {
           }}
         >
           <Image
-            src="/assets/gallery/00034-midf-meet-2022.jpg"
+            src="/assets/gallery/00019-midf-meet-2022.jpeg"
             alt="MIDF Designers' Meet, Aijal Club"
             fill
             style={{
