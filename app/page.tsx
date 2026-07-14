@@ -190,28 +190,28 @@ export default function Home() {
           style={{
             display: 'flex',
             alignItems: 'baseline',
-            gap: 16,
+            gap: 20,
             marginBottom: 'clamp(28px, 4vw, 48px)',
           }}
         >
           <span
             className="font-bodoni"
-            style={{ color: '#C5975B', fontSize: 15 }}
+            style={{ color: '#C5975B', fontSize: 'clamp(24px, 3vw, 36px)' }}
           >
             01
           </span>
-          <h6
+          <h2
+            className="font-bodoni"
             style={{
               margin: 0,
-              fontWeight: 700,
-              fontSize: 12,
-              letterSpacing: '0.2em',
-              textTransform: 'uppercase',
-              color: '#4a5a55',
+              fontWeight: 500,
+              fontSize: 'clamp(28px, 3.6vw, 48px)',
+              letterSpacing: '-0.01em',
+              color: '#033A37',
             }}
           >
             About the Forum
-          </h6>
+          </h2>
         </div>
 
         {/* Two Columns */}
@@ -224,19 +224,6 @@ export default function Home() {
         >
           {/* Main Content */}
           <div style={{ flex: '2 1 440px' }}>
-            <h2
-              className="font-bodoni"
-              style={{
-                margin: '0 0 clamp(24px, 3vw, 36px)',
-                fontWeight: 500,
-                fontSize: 'clamp(28px, 3.6vw, 48px)',
-                lineHeight: 1.1,
-                color: '#033A37',
-                letterSpacing: '-0.01em',
-              }}
-            >
-              Interior Designer te ropui nan, in kalpui khawm.
-            </h2>
             <p
               style={{
                 margin: '0 0 22px',
