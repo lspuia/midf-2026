@@ -79,7 +79,7 @@ export default function Home() {
             }}
           >
             Mizoram chhunga Interior Designer te insuihkhawmna pawl — mumal zawka
-            designing hna thawh a, mi tinte chhawrtu tha tak siam chhuah nan.
+            designing hna thawh a.
           </p>
 
           {/* Buttons */}
