@@ -6,21 +6,19 @@ import Image from 'next/image';
 export default function Gallery() {
   const [lightbox, setLightbox] = useState<{ src: string; caption: string } | null>(null);
 
-  // Meet 2023 images (1-4) and meet 2022 images (excluding deleted: 5,9,17,18,19,27,28)
-  const meet2023Numbers = [1, 2, 3, 4];
-  const meet2022Numbers = [1, 2, 3, 4, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25, 26, 29, 30];
-
-  const meet2023Images = meet2023Numbers.map((n) => ({
-    src: `/assets/gallery/meet-2023-${n}.jpg`,
-    caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
-  }));
-
-  const meet2022Images = meet2022Numbers.map((n) => ({
-    src: `/assets/gallery/meet-2022-${n}.jpg`,
-    caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
-  }));
-
-  const inauguralImages = [...meet2023Images, ...meet2022Images];
+  // All gallery images with new naming convention
+  const inauguralImages = [
+    // 1-30: jpeg files
+    ...Array.from({ length: 30 }, (_, i) => ({
+      src: `/assets/gallery/${String(i + 1).padStart(5, '0')}-midf-meet-2022.jpeg`,
+      caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
+    })),
+    // 31-34: jpg files
+    ...Array.from({ length: 4 }, (_, i) => ({
+      src: `/assets/gallery/${String(i + 31).padStart(5, '0')}-midf-meet-2022.jpg`,
+      caption: 'MIDF Inaugural Meet · Aijal Club, 24.09.2022',
+    })),
+  ];
 
   const registrationImage = {
     src: '/assets/gallery/society-registration.jpg',
