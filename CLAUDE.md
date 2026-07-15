@@ -3,7 +3,7 @@
 ## Overview
 Website for Mizoram Interior Designers Forum (MIDF), a professional organization for interior designers in Mizoram, India.
 
-**Live URL:** https://midf.vercel.app (also https://www.midf.in)
+**Live URL:** https://www.midf.in (also https://midf.vercel.app)
 **GitHub:** https://github.com/lspuia/midf-2026
 
 ## Tech Stack

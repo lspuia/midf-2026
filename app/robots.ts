@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://midf.vercel.app/sitemap.xml',
+    sitemap: 'https://www.midf.in/sitemap.xml',
   };
 }
